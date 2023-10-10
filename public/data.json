@@ -1,0 +1,20 @@
+[
+    {   
+        "cardtag": "Easy",
+        "title": "Simple counter app",
+        "text": "This is a simple counter app I made using Vue.js",
+        "tags": ["Vue.js", "HTML/CSS"]
+    },
+    {   
+        "cardtag": "Intermediate",
+        "title": "InfoCard 2",
+        "text": "This is the text for card 2",
+        "tags": ["tag1", "tag2"]
+    },
+    {
+        "cardtag": "Hard",
+        "title": "InfoCard 3",
+        "text": "This is the text for card 3",
+        "tags": ["tag1", "tag2"]
+    }
+]
