@@ -29,13 +29,13 @@ export default {
 .info-card {
   border: solid 3px rgb(48, 48, 56);
   border-radius: 10px;
-  width: 330px;
+  min-width: 330px;
+  max-width: 330px;
   height: 330px;
   display: flex;
   flex-direction: column;
   margin: 10px;
   transition: 0.2s;
-  
 }
 
 .info-card:hover {

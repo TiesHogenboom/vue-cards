@@ -38,5 +38,6 @@ export default {
     justify-content: center;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
 }
 </style>

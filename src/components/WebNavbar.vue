@@ -21,8 +21,8 @@
   border-right: 3px solid black;
   width: 200px;
   height: 100vh;
-  position: absolute;
   background: white;
+  min-width: 200px;
 }
 
 .list {
