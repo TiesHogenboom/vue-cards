@@ -25,7 +25,7 @@ export default {
 
 </script>
 
-<style scoped>
+<style>
 .info-card {
   border: solid 3px rgb(48, 48, 56);
   border-radius: 10px;
@@ -94,5 +94,6 @@ export default {
 .text {
   font-weight: 300;
   font-size: 18px;
+  margin-bottom: 14px;
 }
 </style>

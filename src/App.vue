@@ -17,5 +17,7 @@ export default {
 <style>
 * {
 font-family: 'Lato', sans-serif;
+padding: 0;
+margin: 0;
 }
 </style>

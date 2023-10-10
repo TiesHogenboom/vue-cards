@@ -1,10 +1,10 @@
 <template>
     <nav class="container">
-      <ul>
-        <li><a href="#">Home</a></li>
+      <ul class="list">
+        <li><a href="#">Cards 1</a></li>
+        <li><a href="#">Cards 2</a></li>
+        <li><a href="#">Create card</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
   </template>
@@ -18,10 +18,27 @@
   <style>
 .container {
   display: flex;
-  justify-content: center;
-  background: red;
+  border-right: 3px solid black;
   width: 200px;
-  height: 400px;
+  height: 100vh;
+  position: absolute;
+  background: white;
+}
+
+.list {
+  padding: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+li {
+  list-style-type: none;
+  margin-bottom: 20px;
 }
 </style>
   
