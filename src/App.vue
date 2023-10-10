@@ -15,5 +15,7 @@ export default {
 </script>
 
 <style>
-
+* {
+font-family: 'Lato', sans-serif;
+}
 </style>
