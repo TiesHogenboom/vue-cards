@@ -1,15 +1,15 @@
 <template>
-  <CardList/>
+  <CardPage/>
 </template>
 
 <script>
-import CardList from './components/CardList.vue'
-import './App.css'
+
+import CardPage from './pages/CardPage.vue'
 
 export default {
   name: 'App',
   components: {
-    CardList
+      CardPage
   }
 }
 </script>

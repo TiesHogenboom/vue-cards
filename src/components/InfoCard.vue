@@ -35,10 +35,16 @@ export default {
   flex-direction: column;
   margin: 10px;
   transition: 0.2s;
+  
 }
 
 .info-card:hover {
   box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+.info-card:hover ~ .info-card {
+  box-shadow: inset -8px 8px 0px rgba(205, 205, 205, 0.8);
+  background:rgba(241, 241, 241, 0.8);
 }
 .info-card:hover .card-title {
   text-decoration: underline;
