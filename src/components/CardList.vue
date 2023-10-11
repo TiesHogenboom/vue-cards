@@ -33,7 +33,7 @@ export default {
 <style>
 .card-list {
     display: flex;
-    width: 100vw;
+    width: 80vw;
     height: 100vh;
     justify-content: center;
     flex-direction: row;

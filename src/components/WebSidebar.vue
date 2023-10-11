@@ -71,11 +71,9 @@ export default {
 .container {
   display: flex;
   border-right: 3px solid black;
-  width: 200px;
+  width: 20vw;
   height: 100vh;
   background: white;
-  min-width: 200px;
-  
 }
 
 .list {
