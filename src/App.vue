@@ -1,23 +1,16 @@
-<template>
-  <Cards1Page/>
-</template>
-
-<script>
-
-import Cards1Page from './views/Cards1Page.vue'
-
-export default {
-  name: 'App',
-  components: {
-      Cards1Page
-  }
-}
+<script setup>
+import { RouterLink, RouterView } from 'vue-router'
 </script>
 
-<style>
-* {
-font-family: 'Lato', sans-serif;
-padding: 0;
-margin: 0;
-}
-</style>
+<template>
+  <div id="layout">
+    <header>
+      <div class="wrapper">
+        <nav>
+          <RouterLink :to="{ name: 'home' }"></RouterLink>
+        </nav>
+      </div>
+    </header>
+    <RouterView />
+  </div>
+</template>
