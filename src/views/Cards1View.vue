@@ -1,7 +1,7 @@
 <template>
-    <div class="page">
+
         <CardList />
-    </div>
+
 </template>
   
 <script>
@@ -17,8 +17,6 @@ export default {
 </script>
   
 <style>
-.page{
-    display:flex;
-}
+
 </style>
   

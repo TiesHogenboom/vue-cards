@@ -13,7 +13,7 @@
             <li class="accordion-item-child">
             <RouterLink :to="{ name: 'cards1' }" @click="toggleAccordion(2)">Cards 1
             <div class="accordion-content-child" :class="{ 'open': isOpen === 2 }">
-              test
+              <p>Additional text for Cards 1.</p>
             </div></RouterLink>
           </li>
           <li class="accordion-item-child">
