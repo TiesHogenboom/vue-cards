@@ -6,44 +6,42 @@
           <p class="list-home-text">Home</p>
         </RouterLink>
       </li>
-      <li class="accordion-item" @click="toggleAccordion(1)">
-        <h1>Cards</h1>
-          <div class="accordion-content" :class="{ 'open': isOpen === 1 }">
+      <li class="accordion-item" >
+        <h1 @click="toggleAccordion(1)">Cards</h1>
+          <div class="accordion-content" :class="{ 'open': isOpen === 1 ||  isOpen === 2 ||  isOpen === 3}">
 
-            <li class="accordion-item-child" @click="toggleAccordion(2)">
-            <RouterLink :to="{ name: 'cards1' }">Cards 1
-              <div class="accordion-content-child" :class="{ 'open': isOpen === 2 }">
-                test
-              </div>
-            </RouterLink>
+            <li class="accordion-item-child">
+            <RouterLink :to="{ name: 'cards1' }" @click="toggleAccordion(2)">Cards 1
+            <div class="accordion-content-child" :class="{ 'open': isOpen === 2 }">
+              test
+            </div></RouterLink>
           </li>
-          <li class="accordion-item-child" @click="toggleAccordion(3)">
-            <RouterLink :to="{ name: 'cards2' }">Cards 2
-              <div class="accordion-content-child" :class="{ 'open': isOpen === 3 }">
-                <p>Additional text for Cards 2.</p>
-              </div>
-            </RouterLink>
+          <li class="accordion-item-child">
+            <RouterLink :to="{ name: 'cards2' }" @click="toggleAccordion(3)">Cards 2
+            <div class="accordion-content-child" :class="{ 'open': isOpen === 3 }">
+              <p>Additional text for Cards 2.</p>
+            </div></RouterLink>
           </li>
 
           </div>
       </li>
       <li class="accordion-item" @click="toggleAccordion(4)">
-        <RouterLink :to="{ name: 'createcard' }">Create card
+        <RouterLink :to="{ name: 'createcard' }" >Create card
           <div class="accordion-content" :class="{ 'open': isOpen === 4 }">
             Additional text for Create card.
           </div>
         </RouterLink>
       </li>
-      <li class="accordion-item" @click="toggleAccordion(4)">
+      <li class="accordion-item" @click="toggleAccordion(5)">
         <RouterLink :to="{ name: 'about' }">About
-          <div class="accordion-content" :class="{ 'open': isOpen === 4 }">
+          <div class="accordion-content" :class="{ 'open': isOpen === 5 }">
             Additional text for About.
           </div>
         </RouterLink>
       </li>
-      <li class="accordion-item" @click="toggleAccordion(5)">
+      <li class="accordion-item" @click="toggleAccordion(6)">
         <RouterLink :to="{ name: 'todo' }">To do
-          <div class="accordion-content" :class="{ 'open': isOpen === 5 }">
+          <div class="accordion-content" :class="{ 'open': isOpen === 6 }">
             Additional text for To do.
           </div>
         </RouterLink>
@@ -67,14 +65,15 @@ export default {
   methods: {
     toggleAccordion(id) {
       if (id === 0) {
-        // Clicked on "Home", close all accordions
+      console.log("Clicked on Home, close all accordions")
         this.isOpen = null;
       } else if (this.isOpen === id) {
-        // Clicked on an open accordion, close it
+        console.log("Clicked on an open accordion, close it")
         this.isOpen = null;
       } else {
-        // Clicked on a closed accordion, open it
+        console.log("Clicked on a closed accordion, open it")
         this.isOpen = id;
+        console.log(id);
       }
     },
   },
@@ -154,9 +153,7 @@ a {
   overflow: hidden;
   margin-top: 10px;
   font-size: 16px;
-  padding-left: 10px;
   background-color: white;
-  border-left: 2px solid black;
   z-index: 1;
   transition: max-height 0.3s ease;
   font-weight: 400;
