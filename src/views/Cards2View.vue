@@ -1,3 +1,3 @@
 <template>
-    About view
+    Cards 2
 </template>

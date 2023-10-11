@@ -11,16 +11,16 @@
         </div></RouterLink>
       </li>
       <li class="accordion-item" @click="toggleAccordion(2)">
-        <a href="#">Cards 2</a>
+        <RouterLink :to="{ name: 'cards2' }">Cards 2
         <div class="accordion-content" :class="{ 'open': isOpen === 2 }">
           Additional text for Cards 2.
-        </div>
+        </div></RouterLink>
       </li>
       <li class="accordion-item" @click="toggleAccordion(3)">
-        <a href="#">Create card</a>
+        <RouterLink :to="{ name: 'createcard' }">Create card
         <div class="accordion-content" :class="{ 'open': isOpen === 3 }">
           Additional text for Create card.
-        </div>
+        </div></RouterLink>
       </li>
       <li class="accordion-item" @click="toggleAccordion(4)">
         <RouterLink :to="{ name: 'about' }">About
@@ -29,10 +29,10 @@
         </div></RouterLink>
       </li>
       <li class="accordion-item" @click="toggleAccordion(5)">
-        <a href="#">To do</a>
+        <RouterLink :to="{ name: 'todo' }">To do
         <div class="accordion-content" :class="{ 'open': isOpen === 5 }">
           Additional text for To do.
-        </div>
+        </div></RouterLink>
       </li>
     </ul>
   </nav>

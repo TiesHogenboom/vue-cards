@@ -1,3 +1,3 @@
 <template>
-    About view
+    To do
 </template>
