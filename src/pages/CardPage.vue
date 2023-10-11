@@ -1,18 +1,18 @@
 <template>
     <div class="page">
-        <WebNavbar />
+        <WebSidebar />
         <CardList />
     </div>
 </template>
   
 <script>
 
-import WebNavbar from '../components/WebNavbar.vue'
+import WebSidebar from '../components/WebSidebar.vue'
 import CardList from '../components/CardList.vue'
 
 export default {
     components: {
-        WebNavbar,
+        WebSidebar,
         CardList
     }
 }

@@ -40,7 +40,7 @@
 
 <script>
 export default {
-  name: 'WebNavbar',
+  name: 'WebSidebar',
   data() {
     return {
       isOpen: null,
