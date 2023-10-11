@@ -25,7 +25,7 @@ export default {
 
 </script>
 
-<style>
+<style scoped>
 .info-card {
   border: solid 3px rgb(48, 48, 56);
   border-radius: 10px;

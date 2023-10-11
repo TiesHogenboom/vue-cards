@@ -30,7 +30,7 @@ export default {
 </script>
 
 
-<style>
+<style scoped>
 .card-list {
     display: flex;
     width: 80vw;
