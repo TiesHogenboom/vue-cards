@@ -2,10 +2,10 @@
   <nav class="container">
     <ul class="list">
       <li class="list-home" @click="toggleAccordion(0)">
-        <a  href="#"><p class="list-home-text">Home</p></a>
+        <a  href="#"><RouterLink :to="{ name: 'home' }"><p class="list-home-text">Home</p></RouterLink></a>
       </li>
       <li class="accordion-item" @click="toggleAccordion(1)">
-        <a href="#">Cards 1</a>
+        <a href="#"><RouterLink :to="{ name: 'cards1' }">Cards 1</RouterLink></a>
         <div class="accordion-content" :class="{ 'open': isOpen === 1 }">
           Additional text for Cards 1.
         </div>
@@ -39,12 +39,16 @@
 </template>
 
 <script>
+import { RouterLink } from 'vue-router'
 export default {
   name: 'WebSidebar',
   data() {
     return {
       isOpen: null,
     };
+  },
+  components: {
+    RouterLink,
   },
   methods: {
     toggleAccordion(id) {

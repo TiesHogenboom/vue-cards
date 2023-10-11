@@ -1,16 +1,24 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
+import WebSidebar from './components/WebSidebar.vue'
 </script>
 
-<template>
-  <div id="layout">
-    <header>
-      <div class="wrapper">
-        <nav>
-          <RouterLink :to="{ name: 'home' }"></RouterLink>
-        </nav>
-      </div>
-    </header>
+<template >
+  <div class ="page">
+    <WebSidebar />
     <RouterView />
   </div>
+
 </template>
+
+<style>
+* {
+font-family: 'Lato', sans-serif;
+padding: 0;
+margin: 0;
+}
+
+.page {
+  display: flex;
+}
+</style>
