@@ -1,15 +1,15 @@
 <template>
-  <CardPage/>
+  <Cards1Page/>
 </template>
 
 <script>
 
-import CardPage from './pages/CardPage.vue'
+import Cards1Page from './views/Cards1Page.vue'
 
 export default {
   name: 'App',
   components: {
-      CardPage
+      Cards1Page
   }
 }
 </script>
