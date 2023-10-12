@@ -42,7 +42,6 @@ export default {
 
 <style scoped>
 .container {
-    background: lavender;
     display: flex;
     flex: 1;
     padding: 50px;

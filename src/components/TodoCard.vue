@@ -30,28 +30,17 @@ export default {
     width: 300px;
     height: 400px;
     background: white;
-    border: 3px solid rgb(209, 209, 227);
-    border-right: 5px solid rgb(191, 191, 214);
-    border-top: 4px solid rgb(191, 191, 214);
-    box-shadow: 5px -4px 1px 0 rgba(191, 191, 214);
     border-radius: 10px;
     margin: 10px;
-    transition: 0.4s;
+    border: 3px solid black;
 }
 
-.card:hover{
-    padding: 11px;
-    border: 2px solid rgb(214, 214, 233);
-    border-right: 4px solid rgb(199, 199, 222);
-    border-top: 3px solid rgb(199, 199, 222);
-    box-shadow: 4px -3px 1px 0 rgb(199, 199, 222);
-}
+
 
 .title {
     display: flex;
     justify-content: center;
     padding-top: 20px;
-    color: rgb(209, 209, 227);
 }
 
 .list {
@@ -60,7 +49,7 @@ export default {
 }
 
 li {
-    border-top: 2px solid rgb(209, 209, 227);;
+    border-top: 2px solid rgb(0, 0, 0);;
     padding-top: 4px;
     padding-bottom: 4px;
     font-size: 18px;
