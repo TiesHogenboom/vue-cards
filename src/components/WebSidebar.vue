@@ -85,7 +85,6 @@ export default {
   display: flex;
   border-right: 3px solid black;
   width: 20vw;
-  height: 100vh;
   background: white;
 }
 
