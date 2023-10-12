@@ -27,7 +27,6 @@
                 <li>Create account page</li>
             </ul>
         </div>
-
     </div>
 </template>
 
@@ -43,6 +42,8 @@
     flex: 1;
     padding: 50px;
     flex-wrap: wrap;
+    min-height:100vh;
+    padding-bottom: 70px;
 }
 
 .card {

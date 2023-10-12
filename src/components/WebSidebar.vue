@@ -84,7 +84,8 @@ export default {
 .container {
   display: flex;
   border-right: 3px solid black;
-  width: 20vw;
+  min-width: 20vw;
+  position: sticky;
   background: white;
 }
 
