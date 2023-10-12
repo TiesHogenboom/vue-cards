@@ -5,7 +5,8 @@
 </template>
 
 <script>
-import InfoCard from "./InfoCard.vue"
+import InfoCard from "./InfoCard.vue";
+import axios from "axios";
 
 export default {
     components: {
@@ -21,14 +22,18 @@ export default {
     },
     methods: {
         loadJSONData() {
-            const JSONData = require('../../public/data.json');
-            this.infocards = JSONData;
+            axios
+                .get('/data.json') // Assuming your JSON file is in the root of the public directory
+                .then(response => {
+                    this.infocards = response.data.infoCard;
+                })
+                .catch(error => {
+                    console.error('Error loading JSON data:', error);
+                });
         }
     }
 };
-
 </script>
-
 
 <style scoped>
 .card-list {
