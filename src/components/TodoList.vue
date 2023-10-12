@@ -27,7 +27,7 @@ export default {
         axios
             .get('/data.json')
             .then(response => {
-                console.log(response.data.todoCard); // Add this line for debugging
+                console.log(response.data.todoCard);
                 this.todocards = response.data.todoCard;
             })
             .catch(error => {

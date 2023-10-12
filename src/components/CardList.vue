@@ -23,7 +23,7 @@ export default {
     methods: {
         loadJSONData() {
             axios
-                .get('/data.json') // Assuming your JSON file is in the root of the public directory
+                .get('/data.json')
                 .then(response => {
                     this.infocards = response.data.infoCard;
                 })

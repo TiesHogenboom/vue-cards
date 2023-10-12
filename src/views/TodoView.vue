@@ -1,7 +1,5 @@
 <template>
-
     <TodoList />
-
 </template>
 
 <script>
@@ -13,9 +11,4 @@ components: {
     TodoList
 }
 }
-
 </script>
-
-<style>
-
-</style>
