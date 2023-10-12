@@ -9,20 +9,18 @@
             </div>
 
             <div class="formsection">
-                
-                <label class="select-title">Select a card list
-                    <select name="" id="" class="select">
+
+                <label class="select-title" for="selectOption">Select a card list</label>
+                    <select name=""  v-model="selectedOption" id="selectOption" class="select">
                         <optgroup label="Card lists">
-                            <option value="card-one">Card 1</option>
-                            <option value="card-two">Card 2</option>
-                            <option value="card-three">Todo card</option>
+                            <option value="option1">Card 1</option>
+                            <option value="option2">Card 2</option>
+                            <option value="option3">Todo card</option>
                         </optgroup>
                     </select>
-                </label>
-
             </div>
 
-            <div class="formsection">
+            <div class="formsection" v-if="selectedOption === 'option1'">
                 <div class="card-item">Item:</div>
                 <input type="text" class="input-item">
                 <button class="add-item">Add item</button>
@@ -35,6 +33,16 @@
         </div>
     </div>
 </template>
+<script>
+export default {
+    data() {
+        return {
+            selectedOption: 'option1' // Set the default selected option
+        };
+    }
+};
+</script>
+  
 
 <style scoped>
 .container {
